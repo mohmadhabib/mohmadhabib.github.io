@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- TailwindCSS (CSS File 2.2.19) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <!-- Alpine Plugins -->
-    <!-- Router Plugin -->
-    <script src="https://unpkg.com/@shaun/alpinejs-router@1.x.x/dist/cdn.min.js" defer></script>
-    <!-- Components Plugin -->
-    <script src="https://unpkg.com/@vimesh/ui"></script>
-    <!-- Persit Plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js" defer></script>
-    <!-- Alpine Plugins Ends -->
-    <!-- AlpineJS Core -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.3/cdn.js" defer></script>
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MohmadHabib</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="icon" href="./images/mohmadhabib.jpg" type="image/x-icon" />
 </head>
 
 <body>
-    <main x-data="{
-      init(){
-        $router.config({mode:'hash'})
-      }
-    }">
-        <template x-route="/">
-            <div class="bg-gray-900 h-screen w-screen text-gray-300 text-3xl font-black flex flex-col justify-center items-center text-center">
-                <p>Amazing Projects</p>
-                <p class="font-thin text-sm">Coming Soon</p>
-                <p class="font-semibold text-sm mt-2 bg-green-800 p-3 rounded-md"><a href="/portfolio" x-link>Portfolio (WIP)</a></p>
-            </div>
-        </template>
-        <template x-route="/portfolio">
-          <div class="text-center flex flex-col justify-center items-center w-screen h-screen">
-            <p class="text-3xl font-black">Still Under Dev</p>
-            <p class="p-3 bg-green-800 text-white rounded-md mt-4 text-lg"><a href="/" x-link>Back To Home</a></p>
-          </div>
 
-        </template>
-    </main>
-    <script src="assets/js/app.js"></script>
+    <a class="profilePicture">
+        <img src="./images/mohmadhabib.jpg" alt="Profile Picture">
+    </a>
+
+    <div class="userName">
+        Mohammad Habib
+    </div>
+
+    <div class="description">
+        Still trying my best!.
+    </div>
+
+    <div class="links">
+        <a class="link" href="https://mknh.pp.ua" target="_blank">
+            <i class="fas fa-globe">&nbsp;</i>Website
+        </a>
+        <a class="link" href="https://github.com/mohmadhabib" target="_blank">
+            <i class="fab fa-github">&nbsp;</i>Github
+        </a>
+        <a class="link" href="https://www.instagram.com/mohmadhabib/" target="_blank">
+            <i class="fab fa-instagram">&nbsp;</i>Instagram
+        </a>
+        <a class="link" href="https://www.reddit.com/user/mohmadhabib" target="_blank">
+            <i class="fab fa-reddit">&nbsp;</i>Reddit
+        </a>
+    </div>
 </body>
 
 </html>
