@@ -1,42 +1,139 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MKNH</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="icon" href="./images/mohmadhabib.jpg" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MohmadHabib</title>
+  <style>
+    body {
+      background-color: #1a001a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; /* Ensures the image is circular */
+      object-fit: cover; /* Keeps the image proportional inside the circle */
+      border: 3px solid white;
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    p.bio {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: rgba(255, 255, 255, 0.8); /* Light color for the bio */
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .link-button {
+      position: relative;
+      display: flex;
+      align-items: center; /* Align icon and text horizontally */
+      justify-content: flex-start; /* Align content to the left */
+      width: 80%;
+      max-width: 400px;
+      margin: 1rem auto;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      background-size: 200% 200%;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.3s, background-position 1s ease-in-out;
+    }
+
+    .link-button .text-container {
+      margin-left: 1rem; /* Space between icon and text */
+      display: flex;
+      flex-direction: column; /* Stack the main text and description vertically */
+      align-items: flex-start; /* Align text to the left */
+    }
+
+    .link-button .description {
+      font-size: 0.9rem; /* Make description slightly smaller */
+      font-weight: normal;
+      color: rgba(255, 255, 255, 0.8); /* Light color for the description */
+      margin-top: 0.3rem;
+    }
+
+    .link-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    .icon {
+      font-size: 1.5rem;
+    }
+
+    .youtube {
+      background: linear-gradient(to right, #ff0000, #ffffff);
+    }
+    
+    .github {
+      background: linear-gradient(to right, #596a72, #cedce7);
+    }
+
+    .discord {
+      background: linear-gradient(to right, #7289da, #9b59b6); /* From blue to purple-ish */
+    }
+
+    .x {
+      background: linear-gradient(to right, #000000, #ffffff); /* From black to white */
+    }
+
+    .tiktok {
+      background: linear-gradient(to right, #000000, #ff69b4);
+    }
+
+    .instagram {
+      background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); /* Instagram-like gradient */
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/gh/Nitishkumar3/fontawesome-pro-v7.1/css/all.css" rel="stylesheet">
 </head>
-
 <body>
+  <img src="https://i.ibb.co/TDHN0Yxn/70383871-4dc4-471c-917d-1a67bd6df4e6.jpg" alt="MKNH Profile" class="profile-img">
+  <h1>MKNH</h1>
+  <p class="bio">BackEnd Developer, Tweaker/Creator for useful tools</p>
 
-    <a class="profilePicture">
-        <img src="./images/mohmadhabib.jpg" alt="Profile Picture">
-    </a>
-
-    <div class="userName">
-        Mohammad Habib
+  <a class="link-button github" href="https://github.com/mohmadhabib" target="_blank">
+    <i class="fab fa-github icon"></i>
+    <div class="text-container">
+      <div>GitHub</div>
+      <p class="description">See Projects</p>
     </div>
-
-    <div class="description">
-        Still trying my best!.
+  </a>
+  <a class="link-button x" href="https://x.com/mohmadhabib" target="_blank">
+    <i class="fab fa-x-twitter icon"></i>
+    <div class="text-container">
+      <div>Follow Me on X</div>
+      <p class="description">Follow for updates</p>
     </div>
-
-    <div class="links">
-        <a class="link" href="https://mknh.pp.ua" target="_blank">
-            <i class="fas fa-globe">&nbsp;</i>Website
-        </a>
-        <a class="link" href="https://github.com/mohmadhabib" target="_blank">
-            <i class="fab fa-github">&nbsp;</i>Github
-        </a>
-        <a class="link" href="https://www.instagram.com/mohmadhabib/" target="_blank">
-            <i class="fab fa-instagram">&nbsp;</i>Instagram
-        </a>
-        <a class="link" href="https://www.reddit.com/user/mohmadhabib" target="_blank">
-            <i class="fab fa-reddit">&nbsp;</i>Reddit
-        </a>
+  </a>
+  <a class="link-button instagram" href="https://www.instagram.com/mohmadhabib" target="_blank">
+    <i class="fab fa-instagram icon"></i>
+    <div class="text-container">
+      <div>Instagram</div>
+      <p class="description">About me and highlights</p>
     </div>
+  </a>
 </body>
-
 </html>
+
